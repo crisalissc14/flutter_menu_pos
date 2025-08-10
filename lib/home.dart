@@ -250,8 +250,8 @@ class _HomePageState extends State<HomePage> {
                       const SizedBox(height: 30),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue,
-                          foregroundColor: Colors.white, // ✅ reemplaza onPrimary por foregroundColor
+                          onPrimary: Colors.white,
+                          primary: Colors.deepOrange,
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
@@ -278,7 +278,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _itemOrder({
+    Widget _itemOrder({
     required String image,
     required String title,
     required String qty,
@@ -340,7 +340,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
     );
-  }
+  }*/
 
   Widget _item({
     required String image,
