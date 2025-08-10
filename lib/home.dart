@@ -250,8 +250,8 @@ class _HomePageState extends State<HomePage> {
                       const SizedBox(height: 30),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          onPrimary: Colors.white,
-                          primary: Colors.deepOrange,
+                          backgroundColor: Colors.blue,
+                          foregroundColor: Colors.white, // ✅ reemplaza onPrimary por foregroundColor
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
